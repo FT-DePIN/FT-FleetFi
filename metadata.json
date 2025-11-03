@@ -1,0 +1,5 @@
+{
+  "name": "FleetFi: Tokenized EV Fleet Management",
+  "description": "A tokenized EV fleet management and fractional ownership platform for Freenergy Tech. This MVP dashboard simulates blockchain tokenization and shows real-time battery/telemetry data for investors and operators.",
+  "requestFramePermissions": []
+}
