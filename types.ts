@@ -1,10 +1,16 @@
 
 export enum Page {
   Landing,
+  About,
   InvestorDashboard,
   OperatorDashboard,
+  DriverDashboard,
+  AdminDashboard,
+  AdminLogin,
   ESGImpact,
   SLXMarketplace,
+  Riders,
+  TrovotechOnboarding,
 }
 
 export type AssetType = 'EV' | 'Battery' | 'Cabinet';
@@ -45,4 +51,25 @@ export interface SLXListing {
   soh: number;
   salvageValue: number; // in Naira
   listedAt: Date;
+}
+
+export interface Rider {
+  id: string;
+  name: string;
+  phone: string;
+  email: string;
+  vehicleAssigned: string;
+  status: 'active' | 'inactive' | 'on-trip';
+  totalTrips: number;
+  totalEarnings: number;
+  rating: number;
+  joinedDate: string;
+}
+
+export interface Pagination<T> {
+  data: T[];
+  page: number;
+  perPage: number;
+  total: number;
+  totalPages: number;
 }
